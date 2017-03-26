@@ -254,7 +254,7 @@ public class NumberPicker extends LinearLayout {
 	
 	public void setValue( int value ){
 		if( value > MAXIMUM ) value = MAXIMUM;
-		if( value >= 0 ){
+		if( value >= MINIMUM ){
 			this.value = value;
 			valueText.setText( this.value.toString() );
 		}
